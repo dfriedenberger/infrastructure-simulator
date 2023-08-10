@@ -1,0 +1,24 @@
+{
+    "items" : [
+        { 
+            "id" : "signal1",
+            "type" : "Ausfahrtssignal"
+        },
+        {
+            "id" : "point1",
+            "type" : "Weiche"
+        },
+        {
+            "id" : "ampel",
+            "type" : "Ampel"
+        },
+        {
+            "id" : "test",
+            "type" : "TestBild"
+        },
+        { 
+            "id" : "signal2",
+            "type" : "Ausfahrtssignal"
+        }
+    ]
+}

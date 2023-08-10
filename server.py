@@ -8,7 +8,9 @@ from fastapi.staticfiles import StaticFiles
 from starlette.responses import StreamingResponse
 from pydantic import BaseModel
 
-import uvicorn
+import asyncio
+from hypercorn.config import Config
+from hypercorn.asyncio import serve
 
 
 from infrastructure.board import Board
@@ -57,7 +59,7 @@ def get_config(board_id : str):
 
 
 @app.get("/video-feed/{board_id}/{id}")
-def get_feed(board_id,id):
+async def get_feed(board_id,id):
 
     if board_id not in boards:
         raise ValueError(f"Unknown board {board_id}")
@@ -70,4 +72,6 @@ app.mount("/", StaticFiles(directory="htdocs",html = True))
 
 if __name__ == '__main__':
     logging.basicConfig()
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    config = Config()
+    config.bind = ["0.0.0.0:8080"]
+    asyncio.run(serve(app, config))

@@ -95,7 +95,7 @@
                     ev.preventDefault()
                     id = $(this).data("id")
                     cmd = $(this).data("cmd")
-                    console.log( "Post",id,cmd );
+                    console.log( "Post",board,id,cmd );
                     
                     $.ajax({
                         url: "/control/"+board,

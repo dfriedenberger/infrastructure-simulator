@@ -1,7 +1,7 @@
 {
     "items" : [
         {
-            "id" : "point1",
+            "id" : "point",
             "type" : "Weiche"
         },
         {
@@ -13,8 +13,21 @@
             "type" : "TestBild"
         },
         { 
-            "id" : "signal2",
+            "id" : "blocksignal",
             "type" : "BlocksignalZs1"
+        },
+        { 
+            "id" : "ausfahrsignal",
+            "type" : "AusfahrsignalZs1"
+        },
+       
+        { 
+            "id" : "einfahrsignal",
+            "type" : "EinfahrsignalZs1"
+        },
+        {
+            "id" : "hauptsignal",
+            "type" : "HauptsignalZs2Zs3"
         }
     ]
 }

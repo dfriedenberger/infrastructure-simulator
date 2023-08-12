@@ -2,13 +2,15 @@ import logging
 import time
 import json
 import os
+import asyncio
 
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
+from fastapi import WebSocket
+
 from starlette.responses import StreamingResponse
 from pydantic import BaseModel
 
-import asyncio
 from hypercorn.config import Config
 from hypercorn.asyncio import serve
 
@@ -58,8 +60,27 @@ def get_config(board_id : str):
     return boards[board_id].get_config()
 
 
+@app.websocket("/image-stream/{board_id}")
+async def get_image_stream(websocket: WebSocket,board_id):
+
+    if board_id not in boards:
+        raise ValueError(f"Unknown board {board_id}")
+    
+    await websocket.accept()
+    try:
+        while True:
+            for id in boards[board_id].ids():
+                image = boards[board_id].get_image(id)
+                await websocket.send_text(id+"#"+image)
+            await asyncio.sleep(0.1)
+
+    except Exception as e:
+        print(e)
+    finally:
+        websocket.close()
+
 @app.get("/video-feed/{board_id}/{id}")
-async def get_feed(board_id,id):
+async def get_video_feed(board_id,id):
 
     if board_id not in boards:
         raise ValueError(f"Unknown board {board_id}")

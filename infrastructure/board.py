@@ -43,6 +43,16 @@ class Board:
 
         return config
     
+    def ids(self):
+        return list(self.infrastructure.keys())
+
+    def get_image(self,id):
+        if id not in self.infrastructure:
+            raise ValueError(f"Unknown Infrastructure {id}")
+
+        return self.infrastructure[id].generate_image()
+
+
     async def generate(self,refresh,id):
 
         if id not in self.infrastructure:

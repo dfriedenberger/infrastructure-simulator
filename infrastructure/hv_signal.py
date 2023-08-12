@@ -166,24 +166,28 @@ class AusfahrsignalZs1(HVSignal):
 
     def __init__(self):
         super().__init__("Ausfahrsignal",["Hp0+Sh0" , "Hp0+Sh1" , "Hp0+Zs1" , "Hp0+Zs8", "Zs1" , "Hp1" , "Hp2" ],True,None,None)
+        self.control("Hp0+Sh0")
 
 class AusfahrsignalZs2Zs3(HVSignal):
 
     def __init__(self):
         super().__init__("Ausfahrsignal",["Hp0+Sh0" , "Hp0+Sh1" , "Hp1" , "Hp1+Zs2" , "Hp1+Zs3","Hp1+Zs2+Zs3" , "Hp2" , "Hp2+Zs2" , "Hp2+Zs3", "Hp2+Zs2+Zs3"],False,"Z","6")
+        self.control("Hp0+Sh0")
 
 class HauptsignalZs2Zs3(HVSignal):
 
     def __init__(self):
         super().__init__("Hauptsignal",["Hp0" , "Hp0+Zs1", "Zs1" , "Hp1" , "Hp1+Zs2" , "Hp1+Zs3","Hp1+Zs2+Zs3" , "Hp2" , "Hp2+Zs2" , "Hp2+Zs3", "Hp2+Zs2+Zs3"],False,"Z","6")
-
+        self.control("Hp0")
 
 class EinfahrsignalZs1(HVSignal):
 
     def __init__(self):
         super().__init__("Einfahrsignal",["Hp0" , "Hp0+Zs1" , "Hp0+Zs8", "Zs1" , "Hp1" , "Hp2" ],True,None,None)
+        self.control("Hp0")
 
 class BlocksignalZs1(HVSignal):
 
     def __init__(self):
         super().__init__("Blocksignal",["Hp0" , "Hp0+Zs1" , "Hp0+Zs8", "Zs1" , "Hp1" ],True,None,None)
+        self.control("Hp0")

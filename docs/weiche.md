@@ -5,7 +5,6 @@
 ## Commands
 ### Wn1 "Wn1"
 
-State:
 ![](weicheWn1.gif)
 
 Example:
@@ -17,7 +16,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"wei
 
 ### Wn2 "Wn2"
 
-State:
 ![](weicheWn2.gif)
 
 Example:

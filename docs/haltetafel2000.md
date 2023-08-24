@@ -5,7 +5,6 @@
 ## Commands
 ### Sperren "on"
 
-State:
 ![](haltetafel2000on.gif)
 
 Example:
@@ -17,7 +16,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"hal
 
 ### Freigeben "off"
 
-State:
 ![](haltetafel2000off.gif)
 
 Example:

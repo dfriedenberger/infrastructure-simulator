@@ -5,7 +5,6 @@
 ## Commands
 ### Halt "halt"
 
-State:
 ![](ampelhalt.gif)
 
 Example:
@@ -17,7 +16,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"amp
 
 ### Achtung "achtung"
 
-State:
 ![](ampelachtung.gif)
 
 Example:
@@ -29,7 +27,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"amp
 
 ### Fahrt "fahrt"
 
-State:
 ![](ampelfahrt.gif)
 
 Example:
@@ -41,7 +38,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"amp
 
 ### Fahrt erwarten "fahrt_erwarten"
 
-State:
 ![](ampelfahrt_erwarten.gif)
 
 Example:

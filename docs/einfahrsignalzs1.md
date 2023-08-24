@@ -5,7 +5,6 @@
 ## Commands
 ### Hp0 "Hp0"
 
-State:
 ![](einfahrsignalzs1Hp0.gif)
 
 Example:
@@ -17,7 +16,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"ein
 
 ### Hp0+Zs1 "Hp0+Zs1"
 
-State:
 ![](einfahrsignalzs1Hp0+Zs1.gif)
 
 Example:
@@ -29,7 +27,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"ein
 
 ### Hp0+Zs8 "Hp0+Zs8"
 
-State:
 ![](einfahrsignalzs1Hp0+Zs8.gif)
 
 Example:
@@ -41,7 +38,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"ein
 
 ### Zs1 "Zs1"
 
-State:
 ![](einfahrsignalzs1Zs1.gif)
 
 Example:
@@ -53,7 +49,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"ein
 
 ### Hp1 "Hp1"
 
-State:
 ![](einfahrsignalzs1Hp1.gif)
 
 Example:
@@ -65,7 +60,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"ein
 
 ### Hp2 "Hp2"
 
-State:
 ![](einfahrsignalzs1Hp2.gif)
 
 Example:

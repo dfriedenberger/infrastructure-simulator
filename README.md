@@ -24,18 +24,12 @@ pip install fastapi hypercorn
 python server.py
 ```
 
-
-
 ### Send Commands
-Switch Point to right
+
 ```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"point","cmd":"Wn2"}' http://localhost:8080/control/hello-world
+curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"<command>"}' http://localhost:8080/control/<board-name>
 ```
-Switch Blocksignal to Hp1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"blocksignal","cmd":"Hp1"}' http://localhost:8080/control/hello-
-world
-```
+
 
 ### Examples
 

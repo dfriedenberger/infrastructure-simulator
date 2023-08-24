@@ -5,7 +5,6 @@
 ## Commands
 ### Hp0+Sh0 "Hp0+Sh0"
 
-State:
 ![](ausfahrsignalzs1Hp0+Sh0.gif)
 
 Example:
@@ -17,7 +16,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"aus
 
 ### Hp0+Sh1 "Hp0+Sh1"
 
-State:
 ![](ausfahrsignalzs1Hp0+Sh1.gif)
 
 Example:
@@ -29,7 +27,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"aus
 
 ### Hp0+Zs1 "Hp0+Zs1"
 
-State:
 ![](ausfahrsignalzs1Hp0+Zs1.gif)
 
 Example:
@@ -41,7 +38,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"aus
 
 ### Hp0+Zs8 "Hp0+Zs8"
 
-State:
 ![](ausfahrsignalzs1Hp0+Zs8.gif)
 
 Example:
@@ -53,7 +49,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"aus
 
 ### Zs1 "Zs1"
 
-State:
 ![](ausfahrsignalzs1Zs1.gif)
 
 Example:
@@ -65,7 +60,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"aus
 
 ### Hp1 "Hp1"
 
-State:
 ![](ausfahrsignalzs1Hp1.gif)
 
 Example:
@@ -77,7 +71,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"aus
 
 ### Hp2 "Hp2"
 
-State:
 ![](ausfahrsignalzs1Hp2.gif)
 
 Example:

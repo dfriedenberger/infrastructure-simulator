@@ -5,7 +5,6 @@
 ## Commands
 ### Sperren "on"
 
-State:
 ![](trapeztafel2000on.gif)
 
 Example:
@@ -17,7 +16,6 @@ curl --request POST --header "Content-Type: application/json" --data '{"id":"tra
 
 ### Freigeben "off"
 
-State:
 ![](trapeztafel2000off.gif)
 
 Example:

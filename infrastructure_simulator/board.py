@@ -3,28 +3,41 @@ from .test_bild import TestBild
 from .ampel import Ampel
 from .weiche import Weiche
 from .hv_signal import AusfahrsignalZs1 , AusfahrsignalZs2Zs3, HauptsignalZs2Zs3, EinfahrsignalZs1, BlocksignalZs1
+from .signal_2000_hz import Haltetafel2000, Trapeztafel2000
+
+
+ITEM_CONFIG = [
+    {
+        "context" : "Railway",
+        "items" : [ Weiche , AusfahrsignalZs1, AusfahrsignalZs2Zs3 , HauptsignalZs2Zs3 , EinfahrsignalZs1 , BlocksignalZs1 , Trapeztafel2000, Haltetafel2000]
+    },
+    {
+        "context" : "Allgemein",
+        "items" : [ Ampel, TestBild ]
+    }
+]
 
 class Board:
 
     def __init__(self,config):
+        self.item_class_map = {}
+        for c in ITEM_CONFIG:
+            for item_class in c["items"]:
+                self.item_class_map[item_class.__name__] = item_class
 
         self.infrastructure = {}
         for item in config['items']:
             print(item['id'],item['type'])
             self.infrastructure[item['id']] = self._get_instance(item['type'])
 
+        
+
     def _get_instance(self,item_type):
 
-        if item_type == "TestBild": return TestBild()
-        if item_type == "Ampel": return Ampel()
-        if item_type == "Weiche": return Weiche()
-        if item_type == "AusfahrsignalZs1": return AusfahrsignalZs1()
-        if item_type == "AusfahrsignalZs2Zs3": return AusfahrsignalZs2Zs3()
-        if item_type == "HauptsignalZs2Zs3": return HauptsignalZs2Zs3()
-        if item_type == "EinfahrsignalZs1": return EinfahrsignalZs1()
-        if item_type == "BlocksignalZs1": return BlocksignalZs1()
+        if item_type not in self.item_class_map:
+            raise ValueError(f"Type {item_type} not supported")
 
-        raise ValueError(f"Type {item_type} not supported")
+        return self.item_class_map[item_type]()
 
 
     def get_config(self):

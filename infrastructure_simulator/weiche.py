@@ -38,15 +38,16 @@ class Weiche:
             return "No possible at the moment"
 
         if self.stellung == cmd:
-            return "point yet in state {cmd}"
+            return {"state" : f"point yet in state {cmd}"}
 
 
         if cmd == "Wn1" or cmd == "Wn2":
             self.new_stellung = cmd
             self.update = now_t
-            return "Ok"
+            return {"state" : "Ok"}
+
         
-        return "Unknown command {cmd}"
+        return {"state" : f"Unknown command {cmd}"}
 
     def _update_state(self):
         now_t = datetime.now()

@@ -5,10 +5,6 @@
             "type" : "Weiche"
         },
         {
-            "id" : "ampel",
-            "type" : "Ampel"
-        },
-        {
             "id" : "test",
             "type" : "TestBild"
         },
@@ -20,7 +16,6 @@
             "id" : "ausfahrsignal",
             "type" : "AusfahrsignalZs1"
         },
-       
         { 
             "id" : "einfahrsignal",
             "type" : "EinfahrsignalZs1"
@@ -28,6 +23,18 @@
         {
             "id" : "hauptsignal",
             "type" : "HauptsignalZs2Zs3"
+        },
+        { 
+            "id" : "trapeztafel",
+            "type" : "Trapeztafel2000"
+        },
+        {
+            "id" : "haltetafel",
+            "type" : "Haltetafel2000"
+        },
+        {
+            "id" : "ampel",
+            "type" : "Ampel"
         }
     ]
 }

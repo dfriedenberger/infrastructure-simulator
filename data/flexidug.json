@@ -1,0 +1,28 @@
+{
+    "items" : [
+        { 
+            "id" : "A2",
+            "type" : "AusfahrsignalZs1"
+        },
+        {
+            "id" : "B1",
+            "type" : "Trapeztafel2000"
+        },
+        {
+            "id" : "5769f58d-b4ea-41f9-b9d1-2a9c458d2c77",
+            "type" : "Weiche"
+        },
+        {
+            "id" : "70aa0450-61b0-48e3-bcab-a0b3d81c92aa",
+            "type" : "Weiche"
+        },
+        {
+            "id" : "A1",
+            "type" : "AusfahrsignalZs1"
+        },
+        {
+            "id" : "B2",
+            "type" : "Haltetafel2000"
+        }
+    ]
+}

@@ -11,7 +11,7 @@ class TestBild:
         return []
 
     def control(self,cmd):
-        raise ValueError("control for TestBild not implemented")
+        return {"state" : f"Unknown command {cmd}"}
        
     def generate_image(self):
         svg_document = svgwrite.Drawing(size = ("400px", "400px"))

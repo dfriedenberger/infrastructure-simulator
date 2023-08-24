@@ -41,21 +41,16 @@ world
 
 {{#examples}}
 #### {{title}}
+
+<table>
 {{#items}}
-#### {{name}}
-![]({{image}})
-
-##### Commands
-{{#commands}}
-###### {{text}}
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"{{cmd}}"}' http://localhost:8080/control/<board>
-world
-```
-
-{{/commands}}
-
+    <tr>
+        <td>{{name}} </td>
+        <td><img src="{{image}}" style="max-height: 100px"></td>
+        <td><a href="{{details}}">Details</a></td>
+    </tr>
 {{/items}}
+</table>
 
 {{/examples}}
 

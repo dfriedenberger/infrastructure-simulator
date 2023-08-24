@@ -40,351 +40,63 @@ world
 ### Examples
 
 #### Railway
-#### Weiche
-![](docs/weiche.gif)
 
-##### Commands
-###### Wn1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Wn1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Wn2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Wn2"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### AusfahrsignalZs1
-![](docs/ausfahrsignalzs1.gif)
-
-##### Commands
-###### Hp0+Sh0
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Sh0"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Sh1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Sh1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs8
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs8"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### AusfahrsignalZs2Zs3
-![](docs/ausfahrsignalzs2zs3.gif)
-
-##### Commands
-###### Hp0+Sh0
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Sh0"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Sh1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Sh1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1+Zs2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1+Zs2"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1+Zs2+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1+Zs2+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2+Zs2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2+Zs2"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2+Zs2+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2+Zs2+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### HauptsignalZs2Zs3
-![](docs/hauptsignalzs2zs3.gif)
-
-##### Commands
-###### Hp0
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1+Zs2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1+Zs2"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1+Zs2+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1+Zs2+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2+Zs2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2+Zs2"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2+Zs2+Zs3
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2+Zs2+Zs3"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### EinfahrsignalZs1
-![](docs/einfahrsignalzs1.gif)
-
-##### Commands
-###### Hp0
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs8
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs8"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp2
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp2"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### BlocksignalZs1
-![](docs/blocksignalzs1.gif)
-
-##### Commands
-###### Hp0
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp0+Zs8
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp0+Zs8"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Zs1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Zs1"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Hp1
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"Hp1"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### Trapeztafel2000
-![](docs/trapeztafel2000.gif)
-
-##### Commands
-###### Sperren
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"on"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Freigeben
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"off"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### Haltetafel2000
-![](docs/haltetafel2000.gif)
-
-##### Commands
-###### Sperren
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"on"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Freigeben
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"off"}' http://localhost:8080/control/<board>
-world
-```
-
-
+<table>
+    <tr>
+        <td>Weiche </td>
+        <td><img src="docs/weiche.gif" style="max-height: 100px"></td>
+        <td><a href="docs/weiche.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>AusfahrsignalZs1 </td>
+        <td><img src="docs/ausfahrsignalzs1.gif" style="max-height: 100px"></td>
+        <td><a href="docs/ausfahrsignalzs1.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>AusfahrsignalZs2Zs3 </td>
+        <td><img src="docs/ausfahrsignalzs2zs3.gif" style="max-height: 100px"></td>
+        <td><a href="docs/ausfahrsignalzs2zs3.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>HauptsignalZs2Zs3 </td>
+        <td><img src="docs/hauptsignalzs2zs3.gif" style="max-height: 100px"></td>
+        <td><a href="docs/hauptsignalzs2zs3.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>EinfahrsignalZs1 </td>
+        <td><img src="docs/einfahrsignalzs1.gif" style="max-height: 100px"></td>
+        <td><a href="docs/einfahrsignalzs1.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>BlocksignalZs1 </td>
+        <td><img src="docs/blocksignalzs1.gif" style="max-height: 100px"></td>
+        <td><a href="docs/blocksignalzs1.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>Trapeztafel2000 </td>
+        <td><img src="docs/trapeztafel2000.gif" style="max-height: 100px"></td>
+        <td><a href="docs/trapeztafel2000.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>Haltetafel2000 </td>
+        <td><img src="docs/haltetafel2000.gif" style="max-height: 100px"></td>
+        <td><a href="docs/haltetafel2000.md">Details</a></td>
+    </tr>
+</table>
 
 #### Allgemein
-#### Ampel
-![](docs/ampel.gif)
 
-##### Commands
-###### Halt
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"halt"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Achtung
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"achtung"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Fahrt
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"fahrt"}' http://localhost:8080/control/<board>
-world
-```
-
-###### Fahrt erwarten
-```
-curl --request POST --header "Content-Type: application/json" --data '{"id":"<item-id>","cmd":"fahrt_erwarten"}' http://localhost:8080/control/<board>
-world
-```
-
-
-#### TestBild
-![](docs/testbild.gif)
-
-##### Commands
-
+<table>
+    <tr>
+        <td>Ampel </td>
+        <td><img src="docs/ampel.gif" style="max-height: 100px"></td>
+        <td><a href="docs/ampel.md">Details</a></td>
+    </tr>
+    <tr>
+        <td>TestBild </td>
+        <td><img src="docs/testbild.gif" style="max-height: 100px"></td>
+        <td><a href="docs/testbild.md">Details</a></td>
+    </tr>
+</table>
 
 

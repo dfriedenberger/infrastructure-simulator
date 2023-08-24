@@ -1,0 +1,22 @@
+# {{name}}
+
+![]({{image}})
+
+## Commands
+{{#commands}} 
+### {{name}} "{{cmd}}"
+
+State:
+![]({{image}})
+
+Example:
+```
+curl --request POST --header "Content-Type: application/json" --data '{"id":"{{item_id}}","cmd":"{{cmd}}"}' http://localhost:8080/control/hello-world
+```
+
+
+
+{{/commands}}
+
+
+

@@ -1,40 +1,44 @@
 {
-    "items" : [
+    "items": [
         {
-            "id" : "point",
-            "type" : "Weiche"
-        },
-        {
-            "id" : "test",
-            "type" : "TestBild"
-        },
-        { 
-            "id" : "blocksignal",
-            "type" : "BlocksignalZs1"
-        },
-        { 
-            "id" : "ausfahrsignal",
-            "type" : "AusfahrsignalZs1"
-        },
-        { 
-            "id" : "einfahrsignal",
-            "type" : "EinfahrsignalZs1"
+            "id": "weiche",
+            "type": "Weiche"
         },
         {
-            "id" : "hauptsignal",
-            "type" : "HauptsignalZs2Zs3"
-        },
-        { 
-            "id" : "trapeztafel",
-            "type" : "Trapeztafel2000"
+            "id": "ausfahrsignalzs1",
+            "type": "AusfahrsignalZs1"
         },
         {
-            "id" : "haltetafel",
-            "type" : "Haltetafel2000"
+            "id": "ausfahrsignalzs2zs3",
+            "type": "AusfahrsignalZs2Zs3"
         },
         {
-            "id" : "ampel",
-            "type" : "Ampel"
+            "id": "hauptsignalzs2zs3",
+            "type": "HauptsignalZs2Zs3"
+        },
+        {
+            "id": "einfahrsignalzs1",
+            "type": "EinfahrsignalZs1"
+        },
+        {
+            "id": "blocksignalzs1",
+            "type": "BlocksignalZs1"
+        },
+        {
+            "id": "trapeztafel2000",
+            "type": "Trapeztafel2000"
+        },
+        {
+            "id": "haltetafel2000",
+            "type": "Haltetafel2000"
+        },
+        {
+            "id": "ampel",
+            "type": "Ampel"
+        },
+        {
+            "id": "testbild",
+            "type": "TestBild"
         }
     ]
 }

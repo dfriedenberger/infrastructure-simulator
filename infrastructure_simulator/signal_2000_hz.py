@@ -70,7 +70,7 @@ class Signal2000Hz:
         svg_document = svgwrite.Drawing(size = ("150px", "170px"))
 
         if self.melder:
-            svg_document.add(svg_document.circle(center=(75,20),r=19,stroke=svgwrite.rgb(0, 0, 0, '%'),fill=self._get_fill_melder()))
+            svg_document.add(svg_document.circle(center=(75,20),r=19,stroke=svgwrite.rgb(0, 0, 0, '%'),stroke_width=2,fill=self._get_fill_melder()))
 
 
         #Ne1 / Trapez-Tafel
@@ -80,7 +80,7 @@ class Signal2000Hz:
 
         #Ne5 / Halte-Tafel
         if self.signal_type == "Ne5":
-            svg_document.add(svg_document.rect((40, 40), (70, 100),stroke=svgwrite.rgb(0, 0, 0, '%'),fill=svgwrite.rgb(100, 100, 100, '%')))
+            svg_document.add(svg_document.rect((40, 40), (70, 100),stroke=svgwrite.rgb(0, 0, 0, '%'),stroke_width=2,fill=svgwrite.rgb(100, 100, 100, '%')))
             svg_document.add(svg_document.text("H", insert = (75, 95), fill=svgwrite.rgb(0, 0, 0, '%'), style = "font-size:60px; font-family:Arial; text-anchor: middle;dominant-baseline: middle;"))
 
 

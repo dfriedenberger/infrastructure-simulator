@@ -53,6 +53,7 @@ for config in ITEM_CONFIG:
         # Hello world
         hello_world["items"].append({
             "id" : name2id(name),
+            "name" : name,
             "type" : name
         })
 

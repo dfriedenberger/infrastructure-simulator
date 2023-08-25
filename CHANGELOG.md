@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2023-08-25
+### Changed
+- add_board for Adding Boards individually to BoardManager
+- increase stroke for Haltetafel and Melder
+- add Name to item config 
+
 ## [1.1.0] - 2023-08-24
 ### Changed
 - add Haltetafel and Trapeztafel

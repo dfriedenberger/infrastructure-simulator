@@ -14,6 +14,10 @@ class BoardManager():
                 bid = os.path.splitext(config_file)[0]
                 self.boards[bid] = Board(config)
 
+    def add_board(self,board_id,config):
+        self.boards[board_id] = Board(config)
+
+
     def get_board(self,board_id):
 
         if board_id not in self.boards:

@@ -83,7 +83,7 @@ $( document ).ready(function() {
                 }
                 item = data.infrastructure[i]
                 console.log("item",item)
-                item_obj = template_func_item({"board" : board, "id" : item.id })
+                item_obj = template_func_item({"board" : board, "id" : item.id , "name" : item.name })
                 $("#"+row_id).append(item_obj)
 
                 var cl = item.commands.length

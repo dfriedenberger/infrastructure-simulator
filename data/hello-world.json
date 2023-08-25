@@ -2,42 +2,52 @@
     "items": [
         {
             "id": "weiche",
+            "name": "Weiche",
             "type": "Weiche"
         },
         {
             "id": "ausfahrsignalzs1",
+            "name": "AusfahrsignalZs1",
             "type": "AusfahrsignalZs1"
         },
         {
             "id": "ausfahrsignalzs2zs3",
+            "name": "AusfahrsignalZs2Zs3",
             "type": "AusfahrsignalZs2Zs3"
         },
         {
             "id": "hauptsignalzs2zs3",
+            "name": "HauptsignalZs2Zs3",
             "type": "HauptsignalZs2Zs3"
         },
         {
             "id": "einfahrsignalzs1",
+            "name": "EinfahrsignalZs1",
             "type": "EinfahrsignalZs1"
         },
         {
             "id": "blocksignalzs1",
+            "name": "BlocksignalZs1",
             "type": "BlocksignalZs1"
         },
         {
             "id": "trapeztafel2000",
+            "name": "Trapeztafel2000",
             "type": "Trapeztafel2000"
         },
         {
             "id": "haltetafel2000",
+            "name": "Haltetafel2000",
             "type": "Haltetafel2000"
         },
         {
             "id": "ampel",
+            "name": "Ampel",
             "type": "Ampel"
         },
         {
             "id": "testbild",
+            "name": "TestBild",
             "type": "TestBild"
         }
     ]
